@@ -159,6 +159,8 @@ input {
 }
 
 .main-header {
+  position: relative;
+  z-index: 1000;
   height: 99px;
   background: #e94643;
 }
@@ -317,21 +319,22 @@ input {
 }
 
 .trapezium {
-  z-index: -1;
   position: absolute;
-  left: 567px;
-  right: 0;
-  top: 250px;
+  left: 709px;
+  top: 274px;
+  z-index: 0;
+  overflow: visible;
+  transform: rotate(2deg);
 }
 
 .trapezium-1 {
   position: absolute;
   display: inline-block;
-  top: 40px;
+  top: 38px;
   right: -35px;
   height: 0px;
-  width: 1086px;
-  border-bottom: 81px solid #04e4a2;
+  width: 1241px;
+  border-bottom: 81px solid #69f0ae;
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
   border-top: 19px solid transparent;
@@ -344,8 +347,8 @@ input {
   top: -51px;
   right: -16px;
   height: 0px;
-  width: 1086px;
-  border-bottom: 81px solid #69f0ae;
+  width: 1241px;
+  border-bottom: 81px solid #04e4a2;
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
   transform: rotate(35deg);
@@ -502,7 +505,9 @@ input {
 }
 
 .container {
-  max-width: 100%;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .clearfix:after {

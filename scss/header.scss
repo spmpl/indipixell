@@ -1,4 +1,6 @@
 .main-header{
+	position: relative
+;	z-index: 1000;
 	height: 99px;
 	background: #e94643;
 	&::before{

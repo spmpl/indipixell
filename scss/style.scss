@@ -1,0 +1,33 @@
+@import 'reset';
+@import 'fonts';
+@import 'variables';
+@import 'dropdown';
+@import 'header';
+@import 'content';
+@import 'form';
+@import 'footer';
+
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left-block {
+  position: absolute;
+  display: inline-block;
+  width: 52%;
+  z-index: 10;
+}
+
+.right-block {
+  display: inline-block;
+  width: 47.66666666666667%;
+}

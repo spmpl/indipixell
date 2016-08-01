@@ -1,9 +1,24 @@
+@keyframes left {
+  0% {
+    transform: translateX(-2000px);
+  }
+  70% {
+    transform: translateX(30px);
+  }
+  90% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 .main-form{
   float: right;
 	width: 520px;
   margin-top: 31px;
   margin-right: 44px;
   background: #fff;
+  animation: left 0.8s;
 
 	.title{
 		margin-bottom: 17px;

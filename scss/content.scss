@@ -2,6 +2,21 @@
 	background: #ef5350;
     height: 582px;
 }
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 .phone-container{
     display: flex;
     justify-content: center;
@@ -14,6 +29,7 @@
     margin-left: 119px;
     background: #000;
     border-radius: 60px;
+    animation: bounce 0.8s;
     &::before{
     	content: '';
     	position: absolute;
@@ -57,13 +73,29 @@
     }
 }
 
+@keyframes right {
+  0% {
+    transform: translateX(-2000px);
+  }
+  70% {
+    transform: translateX(30px);
+  }
+  90% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 .right-block{
    float: right;
+   animation: right 0.8s;
 }
 .text-container{
 	display: inline-block;
     vertical-align: middle;
     margin-top: 184px;
+
 
 
     .title{

@@ -1,0 +1,78 @@
+.main-form{
+  float: right;
+	width: 520px;
+  margin-top: 31px;
+  margin-right: 44px;
+  background: #fff;
+
+	.title{
+		margin-bottom: 17px;
+		margin-left: 21px;
+		font-family: Montserrat;
+		font-weight: 300;
+  	    font-style: normal;
+  	    font-size: 20px;
+  	    color: #ff8a80;
+	}
+	.form-talk{
+		.input{
+            width: 206px;
+            padding: 14.5px 19px;
+            margin-right: 20px;
+            margin-bottom: 14px;
+		        font-family: Montserrat;
+		        font-weight: 300;
+  	        font-style: normal;
+  	        font-size: 16px;
+  	        border: 2px solid #e3f2fd;
+  	        outline: none;
+  	        &:nth-child(2n+1){
+  	        	margin-right: 0;
+  	        }
+		}
+		    .input[type="text"]::-webkit-input-placeholder {color:#636363;}
+        .input[type="text"]::-moz-placeholder          {color:#636363;}
+        .input[type="text"]:-moz-placeholder           {color:#636363;}
+        .input[type="text"]:-ms-input-placeholder      {color:#636363;}
+        .input[type="email"]::-webkit-input-placeholder {color:#636363;}
+        .input[type="email"]::-moz-placeholder          {color:#636363;}
+        .input[type="email"]:-moz-placeholder           {color:#636363;}
+        .input[type="email"]:-ms-input-placeholder      {color:#636363;}
+	    
+      .text{
+          width: 477px;
+          height: 72px;
+          padding: 13px 20px;
+    }
+      .button{
+        float: right;
+        margin-top: 53px;
+        margin-right: 64px;
+        border-radius: 6px;
+        background-color: rgb(4, 228, 162);
+        padding: 19px 0px 0px 0px;
+        width: 166px;
+        height: 37px;
+        font-family: Montserrat;
+        font-weight: 400;
+        font-style: normal; 
+        font-size: 18px;
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .button-form{
+    border-radius: 6px;
+    background-color: #ef5350;
+    width: 120px;
+    height: 31px;
+    margin-top: 0px;
+    margin-right: 0;
+    padding: 13px 0px 0px 0px;
+    &:hover{
+      opacity: 0.7;
+    }
+    }
+  }
+}

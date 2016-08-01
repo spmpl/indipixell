@@ -1,0 +1,35 @@
+.main-header{
+	height: 99px;
+	background: #e94643;
+	&::before{
+		content: '';
+		display: block;
+		height: 20px;
+		background: #04e4a2;
+	}
+	.logo{
+		display: inline-block;
+        padding: 18px 0;
+        padding-left: 155px;
+		font-size: 35px;
+		font-family: Montserrat, Arial, sans-serif;
+		font-weight: 800;
+        font-style: normal;
+        color: $white; 
+	}
+	.contact-link{
+		float: right;
+		padding: 3px 0;
+		margin: 23px 0;
+		text-decoration: none;
+		color: $white;
+		font-family: GothamBook, Arial, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        text-transform: uppercase;
+        &:hover{
+        	border-bottom: 3px solid #fdd835;
+        }
+	}
+}

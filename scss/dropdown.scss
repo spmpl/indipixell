@@ -1,0 +1,56 @@
+
+.custom-dropdown {
+  position: relative;
+}
+
+.custom-dropdown select {
+  color: #636363;
+  font-size: inherit;
+  width: 248px;
+  padding: 14.5px 19px; 
+  border: 2px solid #e3f2fd;
+  font-family: Montserrat;
+  font-weight: 300;
+  font-style: normal;
+  text-overflow: '';
+  -webkit-appearance: button; 
+}
+
+.custom-dropdown::before,
+.custom-dropdown::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+}
+
+.custom-dropdown::after { 
+  width: 20px;
+  height: 10px;
+  background: url("../images/arrow.png") no-repeat;
+  height: 1em;
+  font-size: .625em;
+  line-height: 1;
+  right: 1.2em;
+  top: 50%;
+  margin-top: -.5em;
+}
+
+.custom-dropdown::before { 
+  width: 2em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.custom-dropdown select[disabled] {
+  color: rgba(0,0,0,.3);
+}
+
+.custom-dropdown select[disabled]::after {
+  color: rgba(0,0,0,.1);
+}
+
+.custom-dropdown::after {
+  color: rgba(0,0,0,.4);
+}

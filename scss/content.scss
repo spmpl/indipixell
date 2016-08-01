@@ -3,6 +3,9 @@
     height: 582px;
 }
 .phone-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     float: left;
     position: relative;
     width: 389px;
@@ -33,13 +36,13 @@
         background: #ef5350;
         border-radius: 90px;
     }
+    .photo-container{
 
+    }
     .photo{
     	position: relative;
     	width: 329px;
     	height: 583px;
-    	margin-top: 112px;
-        margin-left: 28px;
     }
 .svg-container{
 	position: absolute;

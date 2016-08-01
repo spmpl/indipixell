@@ -206,6 +206,9 @@ input {
 }
 
 .phone-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   float: left;
   position: relative;
   width: 389px;
@@ -244,8 +247,6 @@ input {
   position: relative;
   width: 329px;
   height: 583px;
-  margin-top: 112px;
-  margin-left: 28px;
 }
 
 .phone-container .svg-container {

@@ -16,7 +16,7 @@
   margin-right: 340px;
 	position: relative;
 	width: 180px;
-	text-align: center;
+  a{
   font-size: 15px;
 	font-family: Montserrat;
 	font-weight: 300;
@@ -36,4 +36,24 @@
   		height: 24px;
   		background: url('../images/mail.png') no-repeat;
   	} 
+  }
 }
+ @media screen and (max-width: 970px){
+        .contact,
+        .copyright{
+            float: none;
+            margin: 0 auto;
+        }
+    }
+ @media screen and (max-width: 970px){
+        .contact{
+            margin-top: 20px;
+        }
+    }
+ @media screen and (max-width: 970px){
+        .copyright{
+          padding-left: 0;
+        }
+    }
+
+

@@ -142,6 +142,11 @@
             opacity: 0.9;
         }
     }
+ @media screen and (max-width: 327px){
+        .button{
+            margin-top: 22px;
+        }
+    }
 }
 .trapezium{
     position: absolute;
@@ -151,6 +156,11 @@
     overflow: visible;
     transform: rotate(2deg);
 }
+ @media screen and (max-width: 1200px){
+        .trapezium{
+            display: none;
+        }
+    }
 .trapezium-1{
     position: absolute;
     display: inline-block;

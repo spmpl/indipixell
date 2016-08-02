@@ -1,6 +1,6 @@
 .main-header{
-	position: relative
-;	z-index: 1000;
+	position: relative;
+	z-index: 1000;
 	height: 99px;
 	background: #e94643;
 	&::before{
@@ -19,6 +19,16 @@
         font-style: normal;
         color: $white; 
 	}
+		 @media screen and (max-width: 580px){
+        .logo{
+        	text-align: center;
+        }
+    }
+		 @media screen and (max-width: 360px){
+        .logo{
+        	padding-left: 95px;
+        }
+    }
 	.contact-link{
 		float: right;
 		padding: 3px 0;
@@ -34,4 +44,19 @@
         	border-bottom: 3px solid #fdd835;
         }
 	}
+	 @media screen and (max-width: 1200px){
+        .contact-link{
+            margin-right: 40px;
+        }
+    }
+	 @media screen and (max-width: 580px){
+        .contact-link{
+        	display: none;
+        }
+    }
+	 @media screen and (max-width: 580px){
+        .logo{
+        	padding-left: 55px;
+        }
+    }
 }

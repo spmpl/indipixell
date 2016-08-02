@@ -45,6 +45,14 @@
   	        	margin-right: 0;
   	        }
 		}
+       @media screen and (max-width: 580px){
+        .input{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+        }
+    }
 		    .input[type="text"]::-webkit-input-placeholder {color:#636363;}
         .input[type="text"]::-moz-placeholder          {color:#636363;}
         .input[type="text"]:-moz-placeholder           {color:#636363;}
@@ -58,6 +66,18 @@
           width: 477px;
           height: 72px;
           padding: 13px 20px;
+    }
+       @media screen and (max-width: 580px){
+        .text{
+          width: 91.7%;
+          margin-top: 20px;
+        }
+    }
+       @media screen and (max-width: 580px){
+        .text{
+          width: 76.7%;
+          margin-top: 20px;
+        }
     }
       .button{
         float: right;
@@ -90,4 +110,36 @@
     }
     }
   }
+ @media screen and (max-width: 580px){
+        .button.button-form{
+            float: left;
+        }
+    }
 }
+ @media screen and (max-width: 1200px){
+        .main-form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+ @media screen and (max-width: 580px){
+        .main-form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+ @media screen and (max-width: 450px){
+        .main-form{
+            margin-top: 20px;
+            justify-content: flex-end;
+        }
+    }
+/* @media screen and (max-width: 375px){
+        .main-form{
+            margin: 0 auto;
+            margin-top: 20px;
+            justify-content: center;
+        }
+    }*/

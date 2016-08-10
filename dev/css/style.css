@@ -206,6 +206,7 @@ input {
   font-style: normal;
   font-size: 16px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .main-header .contact-link:hover {
@@ -375,6 +376,7 @@ input {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+  cursor: pointer;
 }
 
 .text-container .button:hover {
@@ -564,10 +566,11 @@ input {
   border-radius: 6px;
   background-color: #ef5350;
   width: 120px;
-  height: 31px;
+  height: 43px;
   margin-top: 0px;
   margin-right: 0;
-  padding: 13px 0px 0px 0px;
+  padding: 2px 0px 0px 0px;
+  cursor: pointer;
 }
 
 .main-form .form-talk .button-form:hover {
@@ -599,6 +602,7 @@ input {
 @media screen and (max-width: 450px) {
   .main-form {
     margin-top: 20px;
+    margin: auto;
     justify-content: flex-end;
   }
 }
@@ -674,6 +678,11 @@ input {
   .copyright {
     padding-left: 0;
   }
+}
+
+html,
+body {
+  height: 100%;
 }
 
 .container {

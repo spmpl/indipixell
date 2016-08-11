@@ -12,9 +12,12 @@
     transform: translateX(0px);
   }
 }
+.form-container{
+  display: flex;
+  justify-content: flex-end;
+}
 .main-form{
-  float: right;
-  width: 44%;
+  width: 520px;
   margin-right: 44px;
   background: #fff;
   animation: left 0.8s;
@@ -44,7 +47,12 @@
   	        	margin-right: 0;
   	        }
 		}
+     .text{
+            width: 477px;
+            height: 72px;
+            padding: 13px 20px;
     }
+}
 		    .input[type="text"]::-webkit-input-placeholder {color:#636363;}
         .input[type="text"]::-moz-placeholder          {color:#636363;}
         .input[type="text"]:-moz-placeholder           {color:#636363;}
@@ -53,12 +61,6 @@
         .input[type="email"]::-moz-placeholder          {color:#636363;}
         .input[type="email"]:-moz-placeholder           {color:#636363;}
         .input[type="email"]:-ms-input-placeholder      {color:#636363;}
-	    
-      .text{
-          width: 477px;
-          height: 72px;
-          padding: 13px 20px;
-    }
     
       .button{
         float: right;
@@ -93,16 +95,3 @@
     }
     }
   }
- @media screen and (max-width: 580px){
-        .button.button-form{
-            float: left;
-        }
-    }
-}
-
-@media screen and (max-width: 1200px){
-        .main-form{
-          float: none;
-          margin: 0 auto;
-        }
-    }

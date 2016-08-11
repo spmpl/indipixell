@@ -412,9 +412,13 @@ input {
   }
 }
 
+.form-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .main-form {
-  float: right;
-  width: 44%;
+  width: 520px;
   margin-right: 44px;
   background: #fff;
   animation: left 0.8s;
@@ -429,10 +433,6 @@ input {
   font-style: normal;
   font-size: 20px;
   color: #ff8a80;
-}
-
-.main-form .form-talk {
-  
 }
 
 .main-form .form-talk .input {
@@ -452,49 +452,45 @@ input {
   margin-right: 0;
 }
 
-
-
-.main-form .form-talk .input[type="text"]::-webkit-input-placeholder {
-  color: #636363;
-}
-
-.main-form .form-talk .input[type="text"]::-moz-placeholder {
-  color: #636363;
-}
-
-.main-form .form-talk .input[type="text"]:-moz-placeholder {
-  color: #636363;
-}
-
-.main-form .form-talk .input[type="text"]:-ms-input-placeholder {
-  color: #636363;
-}
-
-.main-form .form-talk .input[type="email"]::-webkit-input-placeholder {
-  color: #636363;
-}
-
-.main-form .form-talk .input[type="email"]::-moz-placeholder {
-  color: #636363;
-}
-
-.main-form .form-talk .input[type="email"]:-moz-placeholder {
-  color: #636363;
-}
-
-.main-form .form-talk .input[type="email"]:-ms-input-placeholder {
-  color: #636363;
-}
-
 .main-form .form-talk .text {
   width: 477px;
   height: 72px;
   padding: 13px 20px;
 }
 
+.main-form .input[type="text"]::-webkit-input-placeholder {
+  color: #636363;
+}
 
+.main-form .input[type="text"]::-moz-placeholder {
+  color: #636363;
+}
 
-.main-form .form-talk .button {
+.main-form .input[type="text"]:-moz-placeholder {
+  color: #636363;
+}
+
+.main-form .input[type="text"]:-ms-input-placeholder {
+  color: #636363;
+}
+
+.main-form .input[type="email"]::-webkit-input-placeholder {
+  color: #636363;
+}
+
+.main-form .input[type="email"]::-moz-placeholder {
+  color: #636363;
+}
+
+.main-form .input[type="email"]:-moz-placeholder {
+  color: #636363;
+}
+
+.main-form .input[type="email"]:-ms-input-placeholder {
+  color: #636363;
+}
+
+.main-form .button {
   float: right;
   margin-top: 53px;
   margin-right: 64px;
@@ -513,7 +509,7 @@ input {
   text-align: center;
 }
 
-.main-form .form-talk .button-form {
+.main-form .button-form {
   border-radius: 6px;
   background-color: #ef5350;
   width: 120px;
@@ -524,21 +520,8 @@ input {
   cursor: pointer;
 }
 
-.main-form .form-talk .button-form:hover {
+.main-form .button-form:hover {
   opacity: 0.7;
-}
-
-@media screen and (max-width: 580px) {
-  .main-form .button.button-form {
-    float: left;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .main-form {
-    float: none;
-    margin: 0 auto;
-  }
 }
 
 .main-footer {
@@ -551,6 +534,7 @@ input {
   width: 180px;
   float: left;
   padding-left: 118px;
+  margin-bottom: 40px;
   font-size: 15px;
   font-family: Montserrat;
   font-weight: 300;

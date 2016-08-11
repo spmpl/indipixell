@@ -35,13 +35,16 @@ body{
       display: none;
     }
   }
-
 .right-block {
-  display: inline-block;
+  float: right;
   width: 47.66666666666667%;
+  animation: right 0.8s;
 }
  @media screen and (max-width: 1200px){
         .right-block{
             width: 90%;
+            display: flex;
+            margin: 0 auto;
+            float: none;
         }
     }

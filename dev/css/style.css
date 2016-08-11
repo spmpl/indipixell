@@ -115,8 +115,8 @@ input {
   font-family: Montserrat;
   font-weight: 300;
   font-style: normal;
-  text-overflow: '';
   -webkit-appearance: button;
+  background-color: #fff;
 }
 
 .custom-dropdown::before,
@@ -126,26 +126,15 @@ input {
   pointer-events: none;
 }
 
-.custom-dropdown::after {
+/*.custom-dropdown::after { 
   width: 20px;
   height: 10px;
+  right: 41px;
+  top: 69px;
   background: url("../images/arrow.png") no-repeat;
-  height: 1em;
   font-size: .625em;
   line-height: 1;
-  right: 1.2em;
-  top: 50%;
-  margin-top: -.5em;
-}
-
-.custom-dropdown::before {
-  width: 2em;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  border-radius: 0 3px 3px 0;
-}
-
+}*/
 .custom-dropdown select[disabled] {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -161,7 +150,6 @@ input {
 .main-header {
   position: relative;
   z-index: 1000;
-  height: 99px;
   background: #e94643;
 }
 
@@ -183,15 +171,9 @@ input {
   color: #f9fbe7;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 768px) {
   .main-header .logo {
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .main-header .logo {
-    padding-left: 95px;
+    padding-left: 0;
   }
 }
 
@@ -214,26 +196,14 @@ input {
 }
 
 @media screen and (max-width: 1200px) {
-  .main-header .contact-link {
-    margin-right: 40px;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  .main-header .contact-link {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  .main-header .logo {
-    padding-left: 55px;
+  .main-header .navigation {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
 .content {
   background: #ef5350;
-  height: 582px;
 }
 
 @keyframes bounce {
@@ -324,11 +294,6 @@ input {
   }
 }
 
-.right-block {
-  float: right;
-  animation: right 0.8s;
-}
-
 .text-container {
   display: inline-block;
   vertical-align: middle;
@@ -361,8 +326,9 @@ input {
 
 .text-container .button {
   float: right;
-  margin-top: 53px;
+  margin-top: 57px;
   margin-right: 64px;
+  margin-bottom: 123px;
   border-radius: 6px;
   background-color: #04e4a2;
   padding: 19px 0px 0px 0px;
@@ -448,14 +414,14 @@ input {
 
 .main-form {
   float: right;
-  width: 520px;
-  margin-top: 31px;
+  width: 44%;
   margin-right: 44px;
   background: #fff;
   animation: left 0.8s;
 }
 
 .main-form .title {
+  margin-top: 33px;
   margin-bottom: 17px;
   margin-left: 21px;
   font-family: Montserrat;
@@ -463,6 +429,10 @@ input {
   font-style: normal;
   font-size: 20px;
   color: #ff8a80;
+}
+
+.main-form .form-talk {
+  
 }
 
 .main-form .form-talk .input {
@@ -482,14 +452,7 @@ input {
   margin-right: 0;
 }
 
-@media screen and (max-width: 580px) {
-  .main-form .form-talk .input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-}
+
 
 .main-form .form-talk .input[type="text"]::-webkit-input-placeholder {
   color: #636363;
@@ -529,19 +492,7 @@ input {
   padding: 13px 20px;
 }
 
-@media screen and (max-width: 580px) {
-  .main-form .form-talk .text {
-    width: 91.7%;
-    margin-top: 20px;
-  }
-}
 
-@media screen and (max-width: 580px) {
-  .main-form .form-talk .text {
-    width: 76.7%;
-    margin-top: 20px;
-  }
-}
 
 .main-form .form-talk .button {
   float: right;
@@ -585,38 +536,15 @@ input {
 
 @media screen and (max-width: 1200px) {
   .main-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    float: none;
+    margin: 0 auto;
   }
 }
 
-@media screen and (max-width: 580px) {
-  .main-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .main-form {
-    margin-top: 20px;
-    margin: auto;
-    justify-content: flex-end;
-  }
-}
-
-/* @media screen and (max-width: 375px){
-        .main-form{
-            margin: 0 auto;
-            margin-top: 20px;
-            justify-content: center;
-        }
-    }*/
 .main-footer {
   margin-top: 60px;
   color: #636363;
+  margin-bottom: 60px;
 }
 
 .copyright {
@@ -711,12 +639,16 @@ body {
 }
 
 .right-block {
-  display: inline-block;
+  float: right;
   width: 47.66666666666667%;
+  animation: right 0.8s;
 }
 
 @media screen and (max-width: 1200px) {
   .right-block {
     width: 90%;
+    display: flex;
+    margin: 0 auto;
+    float: none;
   }
 }

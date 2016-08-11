@@ -1,6 +1,5 @@
 .content{
 	background: #ef5350;
-    height: 582px;
 }
 
 @keyframes bounce {
@@ -87,10 +86,6 @@
     transform: translateX(0px);
   }
 }
-.right-block{
-   float: right;
-   animation: right 0.8s;
-}
 .text-container{
 	display: inline-block;
     vertical-align: middle;
@@ -123,8 +118,9 @@
     }
     .button{ 
         float: right;
-        margin-top: 53px;
+        margin-top: 57px;
         margin-right: 64px;
+        margin-bottom: 123px;
         border-radius: 6px;
         background-color: rgb(4, 228, 162);
         padding: 19px 0px 0px 0px;

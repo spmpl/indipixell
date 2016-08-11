@@ -14,20 +14,19 @@
 }
 .main-form{
   float: right;
-	width: 520px;
-  margin-top: 31px;
+  width: 44%;
   margin-right: 44px;
   background: #fff;
   animation: left 0.8s;
-
 	.title{
+    margin-top: 33px;
 		margin-bottom: 17px;
 		margin-left: 21px;
 		font-family: Montserrat;
 		font-weight: 300;
-  	    font-style: normal;
-  	    font-size: 20px;
-  	    color: #ff8a80;
+    font-style: normal;
+    font-size: 20px;
+    color: #ff8a80;
 	}
 	.form-talk{
 		.input{
@@ -45,13 +44,6 @@
   	        	margin-right: 0;
   	        }
 		}
-       @media screen and (max-width: 580px){
-        .input{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          align-content: center;
-        }
     }
 		    .input[type="text"]::-webkit-input-placeholder {color:#636363;}
         .input[type="text"]::-moz-placeholder          {color:#636363;}
@@ -67,18 +59,7 @@
           height: 72px;
           padding: 13px 20px;
     }
-       @media screen and (max-width: 580px){
-        .text{
-          width: 91.7%;
-          margin-top: 20px;
-        }
-    }
-       @media screen and (max-width: 580px){
-        .text{
-          width: 76.7%;
-          margin-top: 20px;
-        }
-    }
+    
       .button{
         float: right;
         margin-top: 53px;
@@ -97,6 +78,7 @@
         text-transform: uppercase;
         text-align: center;
     }
+     
     .button-form{
     border-radius: 6px;
     background-color: #ef5350;
@@ -117,31 +99,10 @@
         }
     }
 }
- @media screen and (max-width: 1200px){
+
+@media screen and (max-width: 1200px){
         .main-form{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+          float: none;
+          margin: 0 auto;
         }
     }
- @media screen and (max-width: 580px){
-        .main-form{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
- @media screen and (max-width: 450px){
-        .main-form{
-            margin-top: 20px;
-            margin: auto;
-            justify-content: flex-end;
-        }
-    }
-/* @media screen and (max-width: 375px){
-        .main-form{
-            margin: 0 auto;
-            margin-top: 20px;
-            justify-content: center;
-        }
-    }*/

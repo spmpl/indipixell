@@ -3,6 +3,12 @@
 	color: #636363;
 	margin-bottom: 60px;
 }
+ @media screen and (max-width: 1200px){
+        .footer-container{
+          display: flex;
+					justify-content: space-around;
+        }
+    }
 .copyright{
 	width: 180px;
 	float: left;
@@ -13,6 +19,12 @@
 	font-weight: 300;
   font-style: normal; 
 }
+ @media screen and (max-width: 1200px){
+        .copyright{
+          float: none;
+					padding-left: 0;
+        }
+    }
 .contact{
   float: right;
   margin-right: 340px;
@@ -40,21 +52,11 @@
   	} 
   }
 }
- @media screen and (max-width: 970px){
-        .contact,
-        .copyright{
-            float: none;
-            margin: 0 auto;
-        }
-    }
- @media screen and (max-width: 970px){
+
+ @media screen and (max-width: 1200px){
         .contact{
-            margin-top: 20px;
-        }
-    }
- @media screen and (max-width: 970px){
-        .copyright{
-          padding-left: 0;
+          float: none;
+					margin-right: 0;
         }
     }
 

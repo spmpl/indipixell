@@ -171,7 +171,7 @@ input {
   color: #f9fbe7;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .main-header .logo {
     padding-left: 0;
   }
@@ -417,6 +417,13 @@ input {
   justify-content: flex-end;
 }
 
+@media screen and (max-width: 1200px) {
+  .form-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .main-form {
   width: 520px;
   margin-right: 44px;
@@ -452,10 +459,23 @@ input {
   margin-right: 0;
 }
 
+@media screen and (max-width: 345px) {
+  .main-form .form-talk .input {
+    margin-right: 0;
+  }
+}
+
 .main-form .form-talk .text {
   width: 477px;
   height: 72px;
   padding: 13px 20px;
+}
+
+@media screen and (max-width: 545px) {
+  .main-form .form-talk .text {
+    width: 204px;
+    margin-top: 14px;
+  }
 }
 
 .main-form .input[type="text"]::-webkit-input-placeholder {
@@ -524,10 +544,43 @@ input {
   opacity: 0.7;
 }
 
+@media screen and (max-width: 1200px) {
+  .main-form .button-form {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main-form {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .main-form {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main-form {
+    width: 76%;
+  }
+}
+
 .main-footer {
   margin-top: 60px;
   color: #636363;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .copyright {
@@ -539,6 +592,13 @@ input {
   font-family: Montserrat;
   font-weight: 300;
   font-style: normal;
+}
+
+@media screen and (max-width: 1200px) {
+  .copyright {
+    float: none;
+    padding-left: 0;
+  }
 }
 
 .contact {
@@ -572,23 +632,10 @@ input {
   background: url("../images/mail.png") no-repeat;
 }
 
-@media screen and (max-width: 970px) {
-  .contact,
-  .copyright {
-    float: none;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 1200px) {
   .contact {
-    margin-top: 20px;
-  }
-}
-
-@media screen and (max-width: 970px) {
-  .copyright {
-    padding-left: 0;
+    float: none;
+    margin-right: 0;
   }
 }
 

@@ -20,7 +20,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    float: left;
     position: relative;
     width: 389px;
     height: 811px;
@@ -89,7 +88,7 @@
 .text-container{
 	display: inline-block;
     vertical-align: middle;
-    margin-top: 184px;
+    margin-top: 195px;
 
 
 
@@ -123,9 +122,7 @@
         margin-bottom: 123px;
         border-radius: 6px;
         background-color: rgb(4, 228, 162);
-        padding: 19px 0px 0px 0px;
-        width: 166px;
-        height: 37px;
+        padding: 17px 22px;
         font-family: Montserrat;
         font-weight: 400;
         font-style: normal; 
@@ -148,7 +145,7 @@
 .trapezium{
     position: absolute;
     left: 709px;
-    top: 274px;
+    top: 280px;
     z-index: 0;
     overflow: visible;
     transform: rotate(2deg);

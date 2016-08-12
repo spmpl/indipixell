@@ -23,18 +23,26 @@
   pointer-events: none;
 }
 
-/*.custom-dropdown::after { 
-  width: 20px;
-  height: 10px;
-  right: 41px;
-  top: 69px;
-  background: url("../images/arrow.png") no-repeat;
-  font-size: .625em;
-  line-height: 1;
-}*/
+.custom-dropdown::after { 
+    width: 20px;
+    height: 10px;
+    height: 1em;
+    font-size: .625em;
+    line-height: 1;
+    right: 19px;
+    top: 50%;
+    margin-top: -.5em;
+    background: url("../images/arrow.png") no-repeat;
+    font-size: .625em;
+    line-height: 1;
+}
 
 .custom-dropdown::before { 
-
+    width: 2em;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 0 3px 3px 0;
 }
 
 .custom-dropdown select[disabled] {

@@ -126,15 +126,28 @@ input {
   pointer-events: none;
 }
 
-/*.custom-dropdown::after { 
+.custom-dropdown::after {
   width: 20px;
   height: 10px;
-  right: 41px;
-  top: 69px;
+  height: 1em;
+  font-size: .625em;
+  line-height: 1;
+  right: 19px;
+  top: 50%;
+  margin-top: -.5em;
   background: url("../images/arrow.png") no-repeat;
   font-size: .625em;
   line-height: 1;
-}*/
+}
+
+.custom-dropdown::before {
+  width: 2em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 3px 3px 0;
+}
+
 .custom-dropdown select[disabled] {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -179,8 +192,8 @@ input {
 
 .main-header .contact-link {
   float: right;
-  padding: 3px 0;
-  margin: 23px 0;
+  margin-top: 28px;
+  padding-bottom: 3px;
   text-decoration: none;
   color: #f9fbe7;
   font-family: GothamBook, Arial, sans-serif;
@@ -225,7 +238,6 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  float: left;
   position: relative;
   width: 389px;
   height: 811px;
@@ -297,7 +309,7 @@ input {
 .text-container {
   display: inline-block;
   vertical-align: middle;
-  margin-top: 184px;
+  margin-top: 195px;
 }
 
 .text-container .title {
@@ -331,9 +343,7 @@ input {
   margin-bottom: 123px;
   border-radius: 6px;
   background-color: #04e4a2;
-  padding: 19px 0px 0px 0px;
-  width: 166px;
-  height: 37px;
+  padding: 17px 22px;
   font-family: Montserrat;
   font-weight: 400;
   font-style: normal;
@@ -358,7 +368,7 @@ input {
 .trapezium {
   position: absolute;
   left: 709px;
-  top: 274px;
+  top: 280px;
   z-index: 0;
   overflow: visible;
   transform: rotate(2deg);
@@ -459,7 +469,7 @@ input {
   margin-right: 0;
 }
 
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 630px) {
   .main-form .form-talk .input {
     margin-right: 0;
   }
@@ -471,10 +481,19 @@ input {
   padding: 13px 20px;
 }
 
-@media screen and (max-width: 545px) {
+@media screen and (max-width: 630px) {
   .main-form .form-talk .text {
     width: 204px;
     margin-top: 14px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .main-form .form-talk {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -558,54 +577,49 @@ input {
   }
 }
 
-@media screen and (max-width: 545px) {
-  .main-form {
-    width: 55%;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .main-form {
-    width: 76%;
-  }
-}
-
 .main-footer {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  max-width: 960px;
   margin-top: 60px;
   color: #636363;
-  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 606px) {
+  .main-footer {
+    display: flex;
+    width: 98%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 1200px) {
   .footer-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
   }
 }
 
 .copyright {
-  width: 180px;
-  float: left;
-  padding-left: 118px;
-  margin-bottom: 40px;
+  margin-right: 133px;
+  margin-bottom: 31px;
   font-size: 15px;
   font-family: Montserrat;
   font-weight: 300;
   font-style: normal;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 606px) {
   .copyright {
-    float: none;
-    padding-left: 0;
+    margin-right: 0;
   }
 }
 
 .contact {
-  float: right;
-  margin-right: 340px;
   position: relative;
-  width: 180px;
 }
 
 .contact a {
@@ -622,11 +636,11 @@ input {
 }
 
 .contact a::after {
-  position: absolute;
-  top: -5px;
-  right: 195px;
   content: '';
   display: inline-block;
+  position: absolute;
+  top: -5px;
+  left: -35px;
   width: 30px;
   height: 24px;
   background: url("../images/mail.png") no-repeat;
@@ -658,9 +672,10 @@ body {
 
 .left-block {
   position: absolute;
-  display: inline-block;
-  width: 52%;
-  z-index: 10;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 42.5%;
 }
 
 @media screen and (max-width: 1200px) {

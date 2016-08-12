@@ -18,8 +18,8 @@
 }
  @media screen and (max-width: 1200px){
         .form-container{
-			display: flex;
-			justify-content: center;
+			      display: flex;
+			      justify-content: center;
         }
     }
 .main-form{
@@ -53,7 +53,7 @@
   	        	margin-right: 0;
   	        }
 		}
- @media screen and (max-width: 345px){
+ @media screen and (max-width: 630px){
         .input{
           margin-right: 0;
         }
@@ -63,13 +63,21 @@
             height: 72px;
             padding: 13px 20px;
     }
- @media screen and (max-width: 545px){
+ @media screen and (max-width: 630px){
         .text{
           width: 204px;
           margin-top: 14px;
         }
     }
 }
+ @media screen and (max-width: 630px){
+        .form-talk{
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+        }
+    }
 		    .input[type="text"]::-webkit-input-placeholder {color:#636363;}
         .input[type="text"]::-moz-placeholder          {color:#636363;}
         .input[type="text"]:-moz-placeholder           {color:#636363;}
@@ -98,14 +106,14 @@
         text-align: center;
     }
     .button-form{
-    border-radius: 6px;
-    background-color: #ef5350;
-    width: 120px;
-    height: 43px;
-    margin-top: 0px;
-    margin-right: 0;
-    padding: 2px 0px 0px 0px;
-    cursor: pointer;
+        border-radius: 6px;
+        background-color: #ef5350;
+        width: 120px;
+        height: 43px;
+        margin-top: 0px;
+        margin-right: 0;
+        padding: 2px 0px 0px 0px;
+        cursor: pointer;
     &:hover{
       opacity: 0.7;
     }
@@ -121,16 +129,5 @@
  @media screen and (max-width: 1200px){
         .main-form{
           margin: 0 auto;
-        }
-    }
-
- @media screen and (max-width: 545px){
-        .main-form{
-        width: 55%;
-        }
-    }
- @media screen and (max-width: 320px){
-        .main-form{
-        width: 76%;
         }
     }
